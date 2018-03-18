@@ -372,7 +372,7 @@ html {
 
 body {
     color: black;
-    font: 17px/26px 'Goudy Old Style', sans-serif; /*font-size font-family*/ /*sans-serif: I have left it there, not sure what it is*/
+    font: 15px/26px 'Goudy Old Style', sans-serif; /*font-size font-family*/ /*sans-serif: I have left it there, not sure what it is*/
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: none;
@@ -961,6 +961,39 @@ object {
     display: block;
 }
 
+.large-entry {
+    /*width: 1170px;*/
+    /*margin: 0 100px auto 100px; /*top right bottom left*/
+    /*padding-left: 15px;*/
+    padding-right: 15px;
+    font-size: 30px;
+}
+    .large-entry header {
+       font-weight: bold;
+    }
+
+.standard-entry {
+    /*width: 1170px;*/
+    /*margin: 0 100px auto 100px;*/ /*top right bottom left*/
+    /*padding-left: 15px;*/
+    margin-top: 25px;
+    padding-right: 15px;
+    /*font-size: 20px;*/
+}
+
+    .standard-entry header {
+        font-size: 19px;
+    }
+
+    .standard-entry .entry-content {
+        margin-top: 18px;
+        font-style: italic;
+    }
+
+    .standard-entry .entry-content .large-number {
+        font-size: 35px;
+    }
+
 
 /*common site style*/
 
@@ -992,7 +1025,7 @@ object {
 /*header style*/
 
 .site-header {
-    padding: 20px 0 0;
+    padding: 17px 0 17px;
     position: fixed;
     left: 0;
     top: 0;
@@ -1086,7 +1119,7 @@ object {
             .main-navigation ul li a:hover,
             .main-navigation ul li:hover > a {
                 color: #1c5d8c;
-                padding: 0 0 41px;
+                padding: 0 0 0;
                 border-bottom: 1px solid #1c5d8c;
             }
 
@@ -2240,11 +2273,11 @@ object {
     overflow: hidden;
 }
 
-    .site-content .content-area {
+    .site-content .maincontent-area {
         padding-top: 51px;
         float: left;
         width: 66.6667%;
-        padding-left: 15px;
+        /*padding-left: 15px;*/
         padding-right: 15px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -2255,12 +2288,18 @@ object {
         padding-top: 51px;
         float: left;
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-top: 50px;
+        /*padding-left: 15px;*/
+        /*padding-right: 15px;*/
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+
+        .site-content .subcontent-area .extra-header {
+            font-size: 19px;
+            font-style: italic;
+        }
 
 .content-area .post .post-thumbnail,
 .content-area .page .post-thumbnail {
@@ -3447,33 +3486,34 @@ object {
     position: relative;
     text-align: center;
 }
+    
+    .site-footer .copyright {
+        color: #bbbcbf;
+        font-size: 14px;
+    }
 
-.footer-copyright {
-    color: #bbbcbf;
-}
-
-    .site-footer .footer-copyright a {
+    .site-footer .copyright a {
         color: #bbbcbf;
     }
 
-    .site-footer a {
-        color: black;
-    }
+.site-footer a {
+    color: black;
+}
 
-    .site-footer p {
-        margin-top: 2px;
-        margin-bottom: 2px;
-    }
+.site-footer p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
 
-        .site-footer a:hover {
-            text-decoration: none;
-            color: #F5C9B8;
-        }
+.site-footer a:hover {
+    text-decoration: none;
+    color: #F5C9B8;
+}
 
-    .site-footer .footer-t {
-        border-bottom: 1px solid #49565f;
-        padding-bottom: 25px;
-    }
+.site-footer .footer-t {
+    border-bottom: 1px solid #49565f;
+    padding-bottom: 25px;
+}
 
 .footer-t .columns-3 {
     float: left;
@@ -4021,8 +4061,6 @@ object {
         line-height: 18px;
         padding: 10px;
     }
-
-   
 }
 
 /*--------------------------------------------------------------
@@ -4037,8 +4075,8 @@ object {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /*padding-left: 15px;*/
+    /*padding-right: 15px;*/
 }
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
@@ -4939,4 +4977,3 @@ object {
 .affix {
     position: fixed;
 }
-
