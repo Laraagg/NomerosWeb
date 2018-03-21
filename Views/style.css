@@ -372,7 +372,7 @@ html {
 
 body {
     color: black;
-    font: 15px/26px 'Goudy Old Style', sans-serif; /*font-size font-family*/ /*sans-serif: I have left it there, not sure what it is*/
+    font: 17px/26px 'Goudy Old Style', sans-serif; /*font-size font-family*/ /*sans-serif: I have left it there, not sure what it is*/
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: none;
@@ -972,31 +972,111 @@ object {
        font-weight: bold;
     }
 
-.standard-entry {
+.subsection-header {
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.column-spacing {
+    padding-right: 25px !important;
+}
+
+.services-summary {
     /*width: 1170px;*/
     /*margin: 0 100px auto 100px;*/ /*top right bottom left*/
     /*padding-left: 15px;*/
     margin-top: 25px;
-    padding-right: 15px;
+    margin-bottom: 25px;
+    /*padding-right: 15px;*/
     /*font-size: 20px;*/
 }
 
-    .standard-entry header {
-        font-size: 19px;
+    .services-summary header {
+        font-size: 1.25em;
     }
 
-    .standard-entry .entry-content {
-        margin-top: 18px;
+    .services-summary .entry-content {
+        /*margin-top: 15px;*/
         font-style: italic;
     }
 
-    .standard-entry .entry-content .large-number {
+.dated-news {
+    /*width: 1170px;*/
+    /*margin: 0 100px auto 100px;*/ /*top right bottom left*/
+    /*padding-left: 15px;*/
+    margin-bottom: 25px;
+    /*padding-right: 15px;*/
+    /*font-size: 20px;*/
+}
+
+    .dated-news .dated-header {
+        /*margin-top: 8px;*/
+        font-style: italic;
+    }
+
+    .dated-news .dated-header .large-number {
         font-size: 35px;
     }
 
+    .dated-news header {
+        font-size: 1.25em;
+    }
+
+    .dated-news .entry-content {
+        margin-top: 8px;
+        font-style: italic;
+    }
+
+.news {
+    /*width: 1170px;*/
+    /*margin: 0 100px auto 100px;*/ /*top right bottom left*/
+    /*padding-left: 15px;*/
+    margin-bottom: 18px;
+    /*padding-right: 15px;*/
+    /*font-size: 20px;*/
+}
+
+    .news header {
+        font-size: 1.25em;
+    }
+
+    .news .entry-content {
+        margin-top: 8px;
+        font-style: italic;
+    }
+
+.post-title {
+    /*width: 1170px;*/
+    /*margin: 0 100px auto 100px;*/ /*top right bottom left*/
+    /*padding-left: 15px;*/
+    /*margin-bottom: 18px;*/
+    /*padding-right: 15px;*/
+    font-size: 25px;
+    font-style: italic;
+}
+
+.post-title-date {
+    /*width: 1170px;*/
+    /*margin: 0 100px auto 100px;*/ /*top right bottom left*/
+    /*padding-left: 15px;*/
+    /*margin-bottom: 18px;*/
+    /*padding-right: 15px;*/
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: underline !important;
+}
+
+.centerColumn-padding {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
 
 /*common site style*/
-
 .container {
     /*width: 1170px;*/
     margin: 0 100px auto 100px; /*top right bottom left*/
@@ -1078,10 +1158,29 @@ object {
 
 
 /*navigation style*/
+.footer-navigation {
+    /*display: inline;*/
+    /*margin: 10px 0 0 0;*/
+    text-align: center; /*set elements to the center of the browser window*/
+}
+
+.footer-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+    .footer-navigation li {
+        display: inline-block;
+        text-align: center;
+        /*width: 150px;*/
+        /*margin: 10px 0 0 0;*/
+        padding: 0 10px 0 10px;
+        text-align: center;
+    }
 
 .main-navigation {
     float: right;
-    margin: 10px 13px 0 0;
+    margin: 10px 0 0 0;
 }
 
     .main-navigation ul {
@@ -2276,7 +2375,7 @@ object {
     .site-content .maincontent-area {
         padding-top: 51px;
         float: left;
-        width: 66.6667%;
+        width: 85%;
         /*padding-left: 15px;*/
         padding-right: 15px;
         -webkit-box-sizing: border-box;
@@ -2296,11 +2395,7 @@ object {
         box-sizing: border-box;
     }
 
-        .site-content .subcontent-area .extra-header {
-            font-size: 19px;
-            font-style: italic;
-        }
-
+       
 .content-area .post .post-thumbnail,
 .content-area .page .post-thumbnail {
     margin-bottom: 36px;

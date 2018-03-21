@@ -4,243 +4,167 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="bootstrap.css">-->
     <title></title>
 </head>
-    <body class="home blog hfeed no-slider full-width">
-        <div id="page" class="site">
-            <div id="home">
-                <header id="masthead" class="site-header headroom headroom--not-top headroom--unpinned" role="banner">
+<body>
+    <div id="page" class="site">
+        
+        <header class="site-header headroom headroom--top" role="banner">
 
-                    <div class="container">
+            <div class="container">
+                <!-- .container sets margin and padding -->
+                <div id="headerRow" class="row"><!-- row has padding-left+-15. Since I want to align the header with the rest of the page (which uses rows) I need to add a row here too -->
+                    <div class="site-branding">
+                        <h1 class="site-title"><a href="http://2609087-0.web-hosting.es/" rel="home">n&degmer&degs<br>ases&degres</a></h1>
+                    </div><!-- .site-branding -->
 
-                        <div class="site-branding">
+                    <nav class="main-navigation" role="navigation">
+                        <div id="primary-menu" class="menu">
+                            <ul>
+                                <li class="page_item page-item-2"><a href="http://2609087-0.web-hosting.es/?page_id=2">nosotros</a></li>
+                                <li class="page_item page-item-2"><a href="http://2609087-0.web-hosting.es/?page_id=2">servicios</a></li>
+                                <li class="page_item page-item-2"><a href="http://2609087-0.web-hosting.es/?page_id=2">noticias</a></li>
+                                <li class="page_item page-item-2"><a href="http://2609087-0.web-hosting.es/?page_id=2">contacto</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- #site-navigation -->
 
-                            <h1 class="site-title"><a href="https://wp-themes.com/" rel="home">Theme Preview</a></h1>
-                            <p class="site-description">Previewing Another WordPress Blog</p>
-                        </div><!-- .site-branding -->
+                </div><!-- #headerRow -->
+            </div><!-- .container -->
+        </header><!-- header -->
 
-                        <div id="mobile-header-primary">
-                            <a id="responsive-menu-button-primary" href="#sidr-main-primary">Menu</a>
+        <div id="content" class="site-content"><!-- .site-content adds some top-padding as it overlaps with the header (can I make it not overlap??) -->
+
+            <div class="container">
+                <!-- .container sets margin and padding -->
+
+                <div id="mainContentRow" class="row">
+
+                    <div class="maincontent-area">
+
+                        <div class="large-entry">
+                            <header>
+                                ?Lorem ipsum dolor sit amet, consectetuer adipiscing elit?
+                            </header>
+                            <div class="entry-content">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
+                            </div><!-- .entry-content -->
                         </div>
 
-                        <nav id="site-navigation" class="main-navigation" role="navigation">
-                            <div id="primary-menu" class="menu">
-                                <ul>
-                                    <li class="page_item page-item-2"><a href="https://wp-themes.com/?page_id=2">About</a></li>
-                                    <li class="page_item page-item-46 page_item_has_children">
-                                        <a href="https://wp-themes.com/?page_id=46">Parent Page</a>
-                                        <ul class="children">
-                                            <li class="page_item page-item-49"><a href="https://wp-themes.com/?page_id=49">Sub-page</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                    </div><!-- #large-paragraph -->
+
+                </div><!-- #mainContentRow -->
+
+                <div id="subContentRow" class="row">
+
+                    <div class="subcontent-area">
+
+                        <div class="col-md-6">
+                            <div class="subsection-header">
+                                servicios destacados
                             </div>
-                        </nav><!-- #site-navigation -->
+                            <div class="services-summary">
+                                <header>
+                                    Asesoria fiscal
+                                </header>
+                                <div class="entry-content">
+                                    Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam qu
+                                </div><!-- .entry-content -->
+                            </div>
+                            <div class="services-summary">
+                                <header>
+                                    Asesoria fiscal
+                                </header>
+                                <div class="entry-content">
+                                    Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis a
+                                </div><!-- .entry-content -->
+                            </div>
+                        </div>
 
-                    </div><!-- .container -->
+                        <div class="col-md-6">
 
-                </header><!-- #masthead -->
+                            <div class="col-md-6 centerColumn-padding">
+                                <div class="subsection-header">
+                                    apuntate testas fechas
+                                </div>
+                                <div class="dated-news">
+                                    <div class="dated-header">
+                                        <span class="large-number">20</span>marzo
+                                    </div>
+                                    <header>
+                                        Asesoria fiscal
+                                    </header>
+                                    <div class="entry-content">
+                                        Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante
+                                    </div><!-- .entry-content -->
+                                </div>
+                                <div class="dated-news">
+                                    <div class="dated-header">
+                                        <span class="large-number">10</span>abril
+                                    </div>
+                                    <header>
+                                        Asesoria fiscal
+                                    </header>
+                                    <div class="entry-content">
+                                        Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
+                                    </div><!-- .entry-content -->
+                                </div>
+                            </div>
 
-            </div><!-- #home -->
+                            <div class="col-md-6">
+                                <div class="subsection-header">
+                                    ultimas noticias
+                                </div>
+                                <div class="news">
+                                    <header>
+                                        Asesoria fiscal
+                                    </header>
+                                    <div class="entry-content">
+                                        Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                    </div><!-- .entry-content -->
+                                </div>
+                                <div class="news">
+                                    <header>
+                                        Asesoria fiscal
+                                    </header>
+                                    <div class="entry-content">
+                                        Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas n
+                                    </div><!-- .entry-content -->
+                                </div>
+                            </div>
 
-            <div id="content" class="site-content">
-                <div class="container">
-                    <div class="row">
+                        </div>
 
-                        <div id="primary" class="content-area">
-                            <main id="main" class="site-main" role="main">
+                    </div> <!-- multi-paragraph -->
+                </div><!-- #subContentRow -->
 
+            </div><!-- .container -->
 
-                                <article id="post-19" class="post-19 post type-post status-publish format-standard hentry category-uncategorized tag-boat tag-lake">
+        </div><!-- .site-content -->
 
+        <footer class="site-footer" role="contentinfo">
 
-                                    <div class="text-holder">
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="posted-on"><a href="https://wp-themes.com/?p=19" rel="bookmark"><time class="entry-date published updated" datetime="2008-10-17T04:33:51+00:00">October 17, 2008</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="https://wp-themes.com/?author=1">Theme Admin</a></span></span>
-                                            </div><!-- .entry-meta -->
-                                            <h2 class="entry-title"><a href="https://wp-themes.com/?p=19" rel="bookmark">Worth A Thousand Words</a></h2>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p>Boat.</p>
-                                            <a href="https://wp-themes.com/?p=19" class="btn-readmore">Read More</a>
-                                        </div><!-- .entry-content -->
-
-                                    </div><!-- .text-holder -->
-
-                                </article><!-- #post-## -->
-
-                                <article id="post-36" class="post-36 post type-post status-publish format-standard hentry category-uncategorized">
-
-
-                                    <div class="text-holder">
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="posted-on"><a href="https://wp-themes.com/?p=36" rel="bookmark"><time class="entry-date published updated" datetime="2008-09-05T19:39:12+00:00">September 5, 2008</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="https://wp-themes.com/?author=1">Theme Admin</a></span></span>
-                                            </div><!-- .entry-meta -->
-                                            <h2 class="entry-title"><a href="https://wp-themes.com/?p=36" rel="bookmark">Elements</a></h2>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p>The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a … </p>
-                                            <a href="https://wp-themes.com/?p=36" class="btn-readmore">Read More</a>
-                                        </div><!-- .entry-content -->
-
-                                    </div><!-- .text-holder -->
-
-                                </article><!-- #post-## -->
-
-                                <article id="post-14" class="post-14 post type-post status-publish format-standard hentry category-uncategorized tag-wordpress">
-
-
-                                    <div class="text-holder">
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="posted-on"><a href="https://wp-themes.com/?p=14" rel="bookmark"><time class="entry-date published updated" datetime="2008-06-21T00:09:24+00:00">June 21, 2008</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="https://wp-themes.com/?author=1">Theme Admin</a></span></span>
-                                            </div><!-- .entry-meta -->
-                                            <h2 class="entry-title"><a href="https://wp-themes.com/?p=14" rel="bookmark">More Tags</a></h2>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p>More of these posts need tags.</p>
-                                            <a href="https://wp-themes.com/?p=14" class="btn-readmore">Read More</a>
-                                        </div><!-- .entry-content -->
-
-                                    </div><!-- .text-holder -->
-
-                                </article><!-- #post-## -->
-
-                                <article id="post-8" class="post-8 post type-post status-publish format-standard hentry category-uncategorized tag-html tag-wordpress">
-
-
-                                    <div class="text-holder">
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="posted-on"><a href="https://wp-themes.com/?p=8" rel="bookmark"><time class="entry-date published updated" datetime="2008-06-21T00:04:53+00:00">June 21, 2008</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="https://wp-themes.com/?author=1">Theme Admin</a></span></span>
-                                            </div><!-- .entry-meta -->
-                                            <h2 class="entry-title"><a href="https://wp-themes.com/?p=8" rel="bookmark">HTML</a></h2>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p>What HTML tags would you like to see? Let’s start with an unordered list: One Two Three Four And then move on to a more interesting ordered list: one, two buckle my shoe three, four knock at the door Five, … </p>
-                                            <a href="https://wp-themes.com/?p=8" class="btn-readmore">Read More</a>
-                                        </div><!-- .entry-content -->
-
-                                    </div><!-- .text-holder -->
-
-                                </article><!-- #post-## -->
-
-                                <article id="post-6" class="post-6 post type-post status-publish format-standard hentry category-uncategorized">
-
-
-                                    <div class="text-holder">
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="posted-on"><a href="https://wp-themes.com/?p=6" rel="bookmark"><time class="entry-date published updated" datetime="2008-06-20T20:06:53+00:00">June 20, 2008</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="https://wp-themes.com/?author=1">Theme Admin</a></span></span>
-                                            </div><!-- .entry-meta -->
-                                            <h2 class="entry-title"><a href="https://wp-themes.com/?p=6" rel="bookmark">Links</a></h2>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p>A few well known WordPress links: WordPress.org, the Codex and the download page.</p>
-                                            <a href="https://wp-themes.com/?p=6" class="btn-readmore">Read More</a>
-                                        </div><!-- .entry-content -->
-
-                                    </div><!-- .text-holder -->
-
-                                </article><!-- #post-## -->
-
-                                <article id="post-4" class="post-4 post type-post status-publish format-standard hentry category-first-child-category category-one-grandchild-category category-parent category-second-child-category">
-
-
-                                    <div class="text-holder">
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="posted-on"><a href="https://wp-themes.com/?p=4" rel="bookmark"><time class="entry-date published updated" datetime="2008-06-20T19:59:54+00:00">June 20, 2008</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="https://wp-themes.com/?author=1">Theme Admin</a></span></span>
-                                            </div><!-- .entry-meta -->
-                                            <h2 class="entry-title"><a href="https://wp-themes.com/?p=4" rel="bookmark">Category Hierarchy</a></h2>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p>This post has 4 categories, part of a hierarchy that is 3 deep. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce euismod commodo ante. Suspendisse potenti. Nunc pellentesque quam vel pede. Ut a lorem non urna molestie euismod. Fusce … </p>
-                                            <a href="https://wp-themes.com/?p=4" class="btn-readmore">Read More</a>
-                                        </div><!-- .entry-content -->
-
-                                    </div><!-- .text-holder -->
-
-                                </article><!-- #post-## -->
-
-                                <article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
-
-
-                                    <div class="text-holder">
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="posted-on"><a href="https://wp-themes.com/?p=1" rel="bookmark"><time class="entry-date published updated" datetime="2008-06-04T22:40:06+00:00">June 4, 2008</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="https://wp-themes.com/?author=1">Theme Admin</a></span></span>
-                                            </div><!-- .entry-meta -->
-                                            <h2 class="entry-title"><a href="https://wp-themes.com/?p=1" rel="bookmark">Hello world!</a></h2>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!</p>
-                                            <a href="https://wp-themes.com/?p=1" class="btn-readmore">Read More</a>
-                                        </div><!-- .entry-content -->
-
-                                    </div><!-- .text-holder -->
-
-                                </article><!-- #post-## -->
-
-                            </main><!-- #main -->
-                        </div><!-- #primary -->
-
-                    </div><!-- .row -->
-                </div><!-- .container -->
-            </div><!-- #content -->
-
-            <footer id="colophon" class="site-footer" role="contentinfo">
-
-                <div class="container">
-
-                    Copyright © 2018 <a href="https://wp-themes.com/">Theme Preview</a>.  <a href="http://raratheme.com/wordpress-themes/business-one-page/" rel="designer" target="_blank">Business One Page by: Rara Theme</a> · Powered by: <a href="https://wordpress.org/" target="_blank">WordPress</a>
-                </div><!-- .container -->
-
-                <a href="#page" class="scrollup">Scroll</a>
-
-            </footer><!-- #colophon -->
-        </div><!-- #page -->
-
-        <script type="text/javascript" src="https://wp-themes.com/wp/wp-includes/js/imagesloaded.min.js?ver=3.2.0"></script>
-        <script type="text/javascript" src="https://wp-themes.com/wp/wp-includes/js/masonry.min.js?ver=3.3.2"></script>
-        <script type="text/javascript" src="https://wp-themes.com/wp-content/themes/business-one-page/js/lightslider.js?ver=1.1.5"></script>
-        <script type="text/javascript" src="https://wp-themes.com/wp-content/themes/business-one-page/js/jquery.sidr.js?ver=2.2.1"></script>
-        <script type="text/javascript" src="https://wp-themes.com/wp-content/themes/business-one-page/js/headroom.js?ver=0.7.0"></script>
-        <script type="text/javascript" src="https://wp-themes.com/wp-content/themes/business-one-page/js/scroll-nav.js?ver=3.0.0"></script>
-        <script type="text/javascript">
-            /* <![CDATA[ */
-            var business_one_page_data = { "auto": "1", "loop": "1", "pager": "1", "animation": "slide", "speed": "400", "pause": "6000", "rtl": "" };
-/* ]]> */
-        </script>
-        <script type="text/javascript" src="https://wp-themes.com/wp-content/themes/business-one-page/js/custom.js?ver=1.1.5"></script>
-        <script type="text/javascript" src="https://wp-themes.com/wp/wp-includes/js/wp-embed.min.js?ver=5.0-alpha-42793"></script>
-
-
-
-        <div id="sidr-main-primary" class="sidr right" style="transition: right 0.2s ease;">
-            <div class="sidr-inner">
-                <a class="btn-closed fa fa-times"></a>
-                <div id="sidr-id-primary-menu" class="sidr-class-menu">
+            <div class="container">
+                <!-- .container sets margin and padding -->
+                <nav class="footer-navigation" role="navigation">
+                    <!--<div id="primary-menu" class="menu">-->
                     <ul>
-                        <li class="sidr-class-page_item sidr-class-page-item-2"><a href="https://wp-themes.com/?page_id=2">About</a></li>
-                        <li class="sidr-class-page_item sidr-class-page-item-46 sidr-class-page_item_has_children">
-                            <a href="https://wp-themes.com/?page_id=46">Parent Page</a>
-                            <ul class="sidr-class-children">
-                                <li class="sidr-class-page_item sidr-class-page-item-49"><a href="https://wp-themes.com/?page_id=49">Sub-page</a></li>
-                            </ul>
-                        </li>
+                        <li>nomeros asesores s.l.</li>
+                        <li>avenida damian tellez lafuente, 7b</li>
+                        <li>06010 badajoz</li>
+                        <li>tfno. 924031042</li>
+                        <li>info@nomeros.com</li>
+                        <li><a href="https://wordpress.org/" target="_blank">facebook</a></li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </body>
+                    <!--</div>-->
+                </nav><!-- #site-navigation -->
+
+                <p class="copyright">&copy 2017 nomeros numeros. <a href="https://wordpress.org/" target="_blank">Politica de privacidad</a> y <a href="https://wordpress.org/" target="_blank">terminos de usos</a></p>
+            </div><!-- .container -->
+
+        </footer><!-- footer -->
+
+    </div> <!-- .site -->
+</body>
 </html>
